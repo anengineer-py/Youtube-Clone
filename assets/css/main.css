@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/********************************
+ *********header section*********
+ ********************************/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 15px;
+}
+
+header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .left #menu {
+  padding: 0 7px;
+}
+
+header .left a:hover {
+  opacity: 0.9;
+}
+
+main {
+  height: calc(100vh - 70px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+main .side-bar {
+  height: 100%;
+  width: 17%;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ddd;
+  height: 45px;
+}
+
+.search input {
+  width: 600px;
+  padding: 10px;
+  border: 0;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+}
+
+.search input:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+.search button {
+  height: 100%;
+  width: 60px;
+  border: none;
+}
+
+.search .mic {
+  margin-top: 10px;
+}
+
+.material-icons {
+  color: #646464;
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+/*********************************
+***********main section***********
+*********************************/
+main .nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+main .nav .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 25px;
+}
+
+main .nav .nav-link span {
+  margin-left: 15px;
+}
+
+main .nav .nav-link:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+main .nav .active {
+  background: #e5e5e5;
+}
+
+main hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}
+
+/******************************
+********content section********
+******************************/
+.content {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+
+.content .videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .videos .video {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.content .videos .video .thumbnail {
+  width: 100%;
+  height: 170px;
+}
+
+.content .videos .video .thumbnail img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 94%;
+  width: 100%;
+}
+
+.content .videos .video .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .videos .video .details .author img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.content .videos .video .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .videos .video .title h3 {
+  color: #030303;
+  line-height: 18px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.content .videos .video .title a,
+.content .videos .video .title span {
+  text-decoration: none;
+  color: #606060;
+  font-size: 12px;
+}
+/*# sourceMappingURL=main.css.map */
